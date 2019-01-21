@@ -20,7 +20,9 @@
     // Do any additional setup after loading the view.
 }
 -(void)viewDidAppear:(BOOL)animated{
-    self.containerView.bounds = CGRectMake(0, 100.0, self.containerView.bounds.size.width, self.containerView.bounds.size.height);
+//    self.containerView.bounds = CGRectMake(0, 100.0, self.containerView.bounds.size.width, self.containerView.bounds.size.height);
+    
+    [self.myScrollView findContentSize];
 }
 
 /*

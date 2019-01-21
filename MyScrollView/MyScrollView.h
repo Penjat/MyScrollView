@@ -1,5 +1,5 @@
 //
-//  ScrollViewController.h
+//  MyScrollView.h
 //  MyScrollView
 //
 //  Created by Spencer Symington on 2019-01-21.
@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MyScrollView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ScrollViewController : UIViewController
-@property (weak, nonatomic) IBOutlet MyScrollView *myScrollView;
+@interface MyScrollView : UIView
+@property (nonatomic)CGSize contentSize;
+- (IBAction)panGesture:(id)sender;
+-(void)findContentSize;
 
 @end
 
