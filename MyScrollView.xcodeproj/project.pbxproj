@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0B246A0621F651F30068C443 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B246A0521F651F30068C443 /* AppDelegate.m */; };
-		0B246A0921F651F40068C443 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B246A0821F651F40068C443 /* ViewController.m */; };
 		0B246A0C21F651F40068C443 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B246A0A21F651F40068C443 /* Main.storyboard */; };
 		0B246A0E21F651F50068C443 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B246A0D21F651F50068C443 /* Assets.xcassets */; };
 		0B246A1121F651F50068C443 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B246A0F21F651F50068C443 /* LaunchScreen.storyboard */; };
 		0B246A1421F651F50068C443 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B246A1321F651F50068C443 /* main.m */; };
 		0B246A1E21F651F50068C443 /* MyScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B246A1D21F651F50068C443 /* MyScrollViewTests.m */; };
 		0B246A2921F651F50068C443 /* MyScrollViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B246A2821F651F50068C443 /* MyScrollViewUITests.m */; };
+		0B246A3B21F655330068C443 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B246A3A21F655330068C443 /* ScrollViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,6 @@
 		0B246A0121F651F30068C443 /* MyScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B246A0421F651F30068C443 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0B246A0521F651F30068C443 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0B246A0721F651F40068C443 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0B246A0821F651F40068C443 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0B246A0B21F651F40068C443 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B246A0D21F651F50068C443 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B246A1021F651F50068C443 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +49,8 @@
 		0B246A2421F651F50068C443 /* MyScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B246A2821F651F50068C443 /* MyScrollViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScrollViewUITests.m; sourceTree = "<group>"; };
 		0B246A2A21F651F50068C443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B246A3921F655330068C443 /* ScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
+		0B246A3A21F655330068C443 /* ScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +103,13 @@
 			children = (
 				0B246A0421F651F30068C443 /* AppDelegate.h */,
 				0B246A0521F651F30068C443 /* AppDelegate.m */,
-				0B246A0721F651F40068C443 /* ViewController.h */,
-				0B246A0821F651F40068C443 /* ViewController.m */,
 				0B246A0A21F651F40068C443 /* Main.storyboard */,
 				0B246A0D21F651F50068C443 /* Assets.xcassets */,
 				0B246A0F21F651F50068C443 /* LaunchScreen.storyboard */,
 				0B246A1221F651F50068C443 /* Info.plist */,
 				0B246A1321F651F50068C443 /* main.m */,
+				0B246A3921F655330068C443 /* ScrollViewController.h */,
+				0B246A3A21F655330068C443 /* ScrollViewController.m */,
 			);
 			path = MyScrollView;
 			sourceTree = "<group>";
@@ -262,7 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B246A0921F651F40068C443 /* ViewController.m in Sources */,
+				0B246A3B21F655330068C443 /* ScrollViewController.m in Sources */,
 				0B246A1421F651F50068C443 /* main.m in Sources */,
 				0B246A0621F651F30068C443 /* AppDelegate.m in Sources */,
 			);
